@@ -1,0 +1,14 @@
+# Dockerfile para executar os testes de performance
+FROM python:3.11-slim
+
+# Instalar dependências
+RUN pip install --no-cache-dir aiohttp asyncio
+
+# Criar diretório de trabalho
+WORKDIR /app
+
+# Copiar scripts
+COPY scripts/ ./scripts/
+
+# Ponto de entrada flexível
+ENTRYPOINT ["python"]

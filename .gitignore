@@ -1,0 +1,38 @@
+# 🗂️ Arquivos ignorados pelo Git
+
+# Logs
+*.log
+logs/
+
+# Dados temporários do Kafka
+kafka-data/
+data/
+
+# Cache Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker volumes
+volumes/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Performance test outputs
+test-results/
+performance-logs/
